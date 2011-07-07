@@ -1,0 +1,269 @@
+
+body, html {
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 11px;
+}
+
+html {
+    background: #333;
+}
+
+a, a:hover {
+    transition: all .08s linear;
+    -o-transition: all .08s linear;
+    -moz-transition: all .08s linear;
+    -webkit-transition: all .08s linear;
+    padding: 1px;
+}
+header {
+    margin: 0;
+    padding: 0 8px 8px 8px;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    color: #eee;
+    overflow: hidden;
+    width: 100%;
+    height: 27px;
+    z-index: 5;
+    position: relative;
+    transition: height .22s ease-out;
+    -o-transition: height .22s ease-out;
+    -moz-transition: height .22s ease-out;
+    -moz-transition:all 1s ease-in-out;
+    -moz-transition:height 2s;
+    -webkit-transition:all 1s ease-in-out;
+    -webkit-transition:height 2s;
+}
+
+header:hover{
+    height: 200px;
+}
+
+header.open {
+    height: 165px;
+}
+
+header h1 {
+    font-family: MolengoRegular, Helvetica, Arial, sans-serif;
+    float: left;
+    margin-top: 3px;
+}
+
+header .header-instruction {
+    font-size: 10px;
+    font-style: italic;
+    color: #999;
+    float: left;
+    margin: 12px 0 0 15px;
+    transition: opacity .100s linear;
+    -o-transition: opacity .100s linear;
+    -moz-transition: opacity .100s linear;
+    -webkit-transition: opacity .100s linear;
+}
+
+header.open .header-instruction {
+    opacity: 0;
+}
+
+header div.extra {
+    margin: 45px 0 0 20px;
+    clear: both;
+    transition: opacity 18s linear 2s;
+    -o-transition: opacity 18s linear 2s;
+    -moz-transition: opacity 18s linear 2s;
+    -webkit-transition: opacity 18s linear 2s;
+}
+
+header.open div.extra {
+
+}
+
+header div.extra h3 {
+    margin-bottom: 10px;
+}
+
+header a {
+    padding: 2px 4px 2px 2px;
+    color: #999;
+
+    transition: all 1s ease-in;
+    -o-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+header a:hover {
+    padding: 2px 4px 2px 2px;
+    color: #ddd;
+    background-color: #333;
+    border-radius: 1px;
+}
+
+header section {
+    float: left;
+    padding: 0 25px;
+    border-left: 1px #333 solid;
+    height: 120px;
+}
+
+header p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+}
+
+#about {
+    border: none;
+    padding-left: 0;
+}
+
+#about p.credits {
+    color: #666;
+    font-size: 11px;
+    margin: 15px 0 2px 0;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+#about a:hover {
+    padding: 2px 10px 2px 8px;
+}
+
+#share {
+}
+
+#share iframe,
+#share div {
+    display: inline-block;
+}
+
+
+#retweet-button {
+    margin-right: 6px;
+}
+
+
+a[href="http://www.w3counter.com"] {
+    display: none!important;
+}
+
+.sider {
+    margin: 0;
+    padding: 0 8px 8px 8px;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    top: 550px;
+    color: #eee;
+    overflow: hidden;
+    width: 150px;
+    height: 8px;
+    z-index: 5;
+    position:absolute;
+    transition: width .22s ease-out,height .22s ease-out;
+    -o-transition: width .22s ease-out,height .22s ease-out;
+    -moz-transition: width .22s ease-out,height .22s ease-out;
+    -moz-transition:all 1s ease-in-out;
+    -moz-transition:width 2s,height 2s;
+    -webkit-transition:all 1s ease-in-out;
+    -webkit-transition:width 2s,height 2s;
+
+   
+}
+
+.sider:hover{
+    width: 1150px;
+    height: 300px;
+}
+
+sider.open {
+    height: 165px;
+}
+
+sider h1 {
+    font-family: MolengoRegular, Helvetica, Arial, sans-serif;
+    float: left;
+    margin-top: 3px;
+}
+
+sider .sider-instruction {
+    font-size: 10px;
+    font-style: italic;
+    color: #999;
+    float: left;
+    margin: 12px 0 0 15px;
+    transition: opacity .100s linear;
+    -o-transition: opacity .100s linear;
+    -moz-transition: opacity .100s linear;
+    -webkit-transition: opacity .100s linear;
+}
+
+sider.open .sider-instruction {
+    opacity: 0;
+}
+
+sider div.extra {
+    margin: 45px 0 0 20px;
+    clear: both;
+    transition: opacity 18s linear 2s;
+    -o-transition: opacity 18s linear 2s;
+    -moz-transition: opacity 18s linear 2s;
+    -webkit-transition: opacity 18s linear 2s;
+}
+
+sider.open div.extra {
+
+}
+
+sider div.extra h3 {
+    margin-bottom: 10px;
+}
+
+sider a {
+    padding: 2px 4px 2px 2px;
+    color: #999;
+
+    transition: all 1s ease-in;
+    -o-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+sider a:hover {
+    padding: 2px 4px 2px 2px;
+    color: #ddd;
+    background-color: #333;
+    border-radius: 1px;
+}
+
+sider section {
+    float: left;
+    padding: 0 25px;
+    border-left: 1px #333 solid;
+    height: 120px;
+}
+
+sider p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+}
+
+#optiontitle {
+    border: none;
+    padding-left: 0;
+}
+
+#optiontitle p.credits {
+    color: #666;
+    font-size: 11px;
+    margin: 15px 0 2px 0;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+#optiontitle a:hover {
+    padding: 2px 10px 2px 8px;
+}
+
+canvas{
+    display:inline-block;
+    
+}

@@ -1,0 +1,45 @@
+
+String message = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+PFont f;
+Letter lt = new Letter();
+// The radius of a circle
+float r = 100;
+
+void setup() {
+  
+  size(820, 620);
+  //f = createFont("Georgia",40,true);
+  //textFont(f);
+  // The text must be centered!
+  textAlign(CENTER);
+  smooth();
+}
+
+void draw() {
+
+    background(255);
+    stroke(0);
+    float mx=mouseX;
+    float my=mouseY;
+    char currentChar = message.charAt(random(0,20));
+    mx= mouseX;
+    my = mouseY;
+   // pushMatrix();
+   lt = new Letter();
+   lt.setLetter(currentChar,mx,my);
+    line(0,0, 200, 200);
+ }
+
+
+
+
+
+class Letter {
+    void setLetter(char ch,float xx, float yy){
+        // translate(mx, my);
+         rotate();
+         fill(0);
+         text(ch,xx,yy);
+      //  popMatrix();
+    }
+}

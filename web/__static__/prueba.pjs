@@ -1,0 +1,57 @@
+HLine h1 = new HLine();
+float[] speeds = new float[3];
+float ypos,xstarter=0,ystarter=0;
+String message = "abcdefghiklmnopqrstuvwxyz";
+char ch;
+float let=0;
+boolean te;
+
+void setup() {
+background(0);
+message = "abcdefghiklmnopqrstuvwxyz";
+te=false;
+  size(1000, 450);
+  f = createFont("fantasy",36,true);
+  textFont(f);
+  smooth();
+  speeds[0] = 0.1;
+  speeds[1] = 2.0;
+  speeds[2] = 0.5;
+  fill(255,25);
+}
+
+void draw() {
+
+if(mousePressed){
+// delay(250);
+ h1.update(ypos);
+// redraw();
+}
+
+}
+
+void setText(String newtext) {
+    message = newtext;
+    te=true;
+}
+
+class HLine {
+  void update(float y) {
+    if((mouseX >= xstarter+20) || (mouseY >= ystarter+20) || (mouseX <= xstarter-20) || (mouseY <= ystarter-20)){
+ // rotate(0.05);
+ // translate(mouseX,mouseY);
+    if(te==true){
+        ch= message.charAt(let);
+        let++;
+        if(let==message.length){
+            let=0;
+        }
+    }else{
+  ch = message.charAt(random(0,25));
+    }
+    text(ch,mouseX,mouseY);
+     xstarter = mouseX;
+     ystarter = mouseY;
+    }
+  }
+}
