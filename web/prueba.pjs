@@ -17,7 +17,7 @@ te=false;
   speeds[0] = 0.1;
   speeds[1] = 2.0;
   speeds[2] = 0.5;
-  fill(255,25);
+  fill(255,75);
 }
 
 void draw() {

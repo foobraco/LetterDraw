@@ -264,6 +264,15 @@ sider p {
 }
 
 canvas{
+    position:static;
+    display:inline-table;
+    padding-top: 25px;
+}
+
+form{
+     margin: 20px;
+    position:relative;
     display:inline-block;
-    
+    width: 50px;
+    padding-right: 150px;
 }

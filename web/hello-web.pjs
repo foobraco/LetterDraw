@@ -1,4 +1,4 @@
-
+//This is just a testing file, it has no use at the app, but check it out maybe it'd do something for you
 String message = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
 PFont f;
 Letter lt = new Letter();
